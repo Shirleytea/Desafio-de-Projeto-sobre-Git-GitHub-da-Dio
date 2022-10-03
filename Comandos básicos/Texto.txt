@@ -1,0 +1,63 @@
+Para consultar commits visualizando as ramificações utilizamos o comando
+git log --graph
+
+Para criar uma nova branch utilizamos o comando
+git branch nome_branch
+
+Para alterar de branch utilizamos o comando
+git checkout nome_branch
+
+Para unir duas branches utilizamos o comando
+git merge nome_branch
+
+Para voltar o arquivo para antes da edição utilizamos o comando
+git checkout nome_arquivo
+
+Para ver as modificações em um arquivo utilizamos o comando
+git diff nome_arquivo
+
+Para voltar arquivos staged utilizamos o comando
+git reset HEAD nome_arquivo
+
+Para voltar arquivos que já estão em um commit utilizamos o comando
+git reset --soft id_commit_anterior
+git reset --mixed id_commit_anterior
+git reset --hard id_commit_anterior
+
+Para adicionar um repositório remoto utilizamos o comando
+git remote add origin url_repositorio
+
+Para clonar um repositório remoto utilizamos o comando
+git clone url_repositorio
+
+Para obter as modificações de um repositório remoto utilizamos o comando
+git pull origin main
+
+Para enviar o código para o repositório remoto utilizamos o comando
+git push origin main
+
+Utilizamos o merge e rebase para unir branches:
+
+Merge
+git merge branch_name
+
+Rebase
+git rebase branch_name
+
+Limpar uma alteração temporária
+git stash clear
+
+Listar alterações temporárias
+git stash list
+
+Aplicar uma alteração temporária
+git stash apply
+
+Armazenar uma alteração temporária
+git stash
+git stash --include-untracked
+
+Para desfazer um commit mantendo o histórico
+git revert id_commit
+
+
